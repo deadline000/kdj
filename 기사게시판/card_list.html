@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Card Menu</title>
+  <script defer src = 'pet.js'></script>
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>    
+  <link rel="stylesheet" href="card_list.css">
+  <!-- <style>
+    * {
+      margin: 0 auto;
+    }
+
+   
+
+     
+    .container1 { 
+      margin-top: 10px;
+      width: 100%;
+      height: 1500px;
+      max-width: 1500px;
+      min-width: 370px;
+      border-radius: 15px;
+      background: rgb(34,193,195);
+      background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+      text-align: center;
+    }
+
+    header {
+      height: 200px;
+      text-align: center; 
+    }
+
+    h1 {
+      margin-top: 40px;
+      text-decoration: coral underline; 
+      text-underline-position: under;
+      line-height: 100px;
+    }
+    
+    section {
+      width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      /* width: 250px; */
+      width: calc(25% - 30px); /* 각 카드의 너비를 25%로 설정하고 간격을 뺍니다. */
+      height: 355px;
+      border-radius: 15px;
+      background-color: white;
+      margin: 15px; 
+      display: inline-block; /*인라인 블록 요소로 설정하여 수평 정렬*/
+
+      }
+
+      .card img {
+    width: 220px;
+    border-radius: 15px;
+    display: block; /* 이미지를 블록 요소로 설정하여 가운데 정렬 적용 */
+    margin: 0 auto; /* 좌우 여백을 auto로 설정하여 가운데 정렬 */
+    margin-top: 10px;
+    height: 180px;
+      }
+
+      p {
+        line-height: 14px;
+        margin: 15px;
+        margin-top: -10px;
+      }
+
+
+      .footer1 {
+      text-align: center;
+      line-height: 50px;
+      
+    } 
+
+
+      @media (min-width:1280px) {
+        section { width: 1040px; height: 580px; }
+      }
+
+      @media (max-width:1279px) {
+        section { width: 780px; height: 870px; }
+      }
+      
+      @media (max-width:900px) {
+        section { width: 520px; height: 1160px; }
+      }
+
+      @media (max-width:600px) {
+        section { width: 260px; height: 2320px; }
+      }
+     
+
+    /* 우측 따라다니는 메뉴*/
+#floatRight {
+  position: absolute;
+  width: 250px;
+  right: 2%;
+  top: 600px;
+  z-index: index 9999;
+}
+
+.height{
+  height:1000px;  
+}
+     
+  </style> -->
+
+  <!-- -------------------------------------------------------------------------- -->
+
+
+</head>
+
+<body>
+    <nav>
+          
+        <div id="logo">
+           <!-- 로고 사진 -->
+            <img width="170px"  height="50" src="img/logo.png">
+
+        </div>
+        <!-- - **내정보 / 로그인 / 로그아웃**
+- **관리자홈**
+- **공지 / 고객센터**
+- **피드(전문가찾기)**
+- **검색창** -->
+        <ul class="navigation-menu">
+            
+            <li><a href="notice.jsp">공지사항</a>  </li>
+			<li><a href="proinfo.jsp">전문가 찾기</a></li>
+            <li><a href="community.jsp">커뮤니티</a></li>
+            <li><a href="servicecenter.jsp">고객센터</a></li>
+        </ul>
+        <div id="utility">
+            <span class="material-symbols-outlined">
+              <a href="#">내정보</a> 
+            </span>
+            <span class="material-symbols-outlined">
+            <a href="#">로그인</a> 
+            </span>
+            <span class="material-symbols-outlined">
+            <a href="#">회원가입</a> 
+            </span>
+        </div>
+    </nav>
+
+   
+  <div class="container1">
+
+      <header style="font-size: 50px;">
+          <h1>knight!!</h1>
+      </header>
+    <section>
+
+      <div class="card"><img src="img/티모시.jpg">
+        <br>
+        <br>
+        <p><span style=color:#e2703a;>★★★★★</span><br><br> Stelliferous</p>
+        <p><span style="font-size: 12px;">바래? 다 줄게!</span></p>  
+      </div>
+
+      <div class="card"><img src="img/티모시.jpg">
+        <br>
+        <br>
+        <p><span style=color:#e2703a;>★★★★★</span><br><br>Stelliferous</p>
+        <p><span style="font-size: 12px;">There are many variations of passages of Lorem lpsum avaliable</span></p>
+        
+      </div>
+
+      <div class="card"><img src="img/pic3.jpg">
+        <br>
+        <br>
+        <p><span style=color:#e2703a;>★★★★★</span><br><br> Stelliferous</p>
+        <p><span style="font-size: 12px;">There are many variations of passages of Lorem lpsum avaliable</span></p>
+        
+      </div>
+
+      <div class="card"><img src="img/티모시.jpg">
+        <br>
+        <br>
+        <p><span style=color:#e2703a;>★★★★★</span><br> <br>Stelliferous</p>
+        <p><span style="font-size: 12px;">There are many variations of passages of Lorem lpsum avaliable</span></p>
+        
+      </div>
+
+      <div class="card"><img src="img/pic5.jpg">
+        <br>
+        <br>
+        <p><span style=color:#e2703a;>★★★★★</span><br><br> Stelliferous</p>
+        <p><span style="font-size: 12px;">There are many variations of passages of Lorem lpsum avaliable</span></p>
+        
+      </div>
+
+      <div class="card"><img src="img/pic6.jpg">
+        <br>
+        <br>
+        <p><span style=color:#e2703a;>★★★★★</span><br><br> Stelliferous</p>
+        <p><span style="font-size: 12px;">There are many variations of passages of Lorem lpsum avaliable</span></p>
+        
+      </div>
+
+      <div class="card"><img src="img/pic7.jpg">
+        <br>
+        <br>
+        <p><span style=color:#e2703a;>★★★★★</span><br><br> Stelliferous</p>
+        <p><span style="font-size: 12px;">There are many variations of passages of Lorem lpsum avaliable</span></p>
+        
+      </div>
+
+      <div class="card"><img src="img/pic8.png">
+        <br>
+        <br>
+        <p><span style=color:#e2703a;>★★★★★</span><br><br> Stelliferous</p>
+        <p><span style="font-size: 12px;">There are many variations of passages of Lorem lpsum avaliable</span></p>
+        
+      </div>
+
+      <div class="card"><img src="img/pic8.png">
+        <br>
+        <br>
+        <p><span style=color:#e2703a;>★★★★★</span><br><br> Stelliferous</p>
+        <p><span style="font-size: 12px;">There are many variations of passages of Lorem lpsum avaliable</span></p>
+        
+      </div>
+      <!-- 따라다니는 배너 -->
+  <div class="height">
+      <div id="floatRight">
+        <a href="https://fconline.nexon.com/main/index" target="_blank()"><img src="img/ad.png" style="width:300px;"/></a>
+      </div>
+    </div>
+    <!-- 따라다니는 배너 -->
+  </div>
+    </section>
+
+
+<footer class="footer1">
+  Copyrigth 2024. dasuri. All rights reserved.
+</footer>
+
+</body>
+</html>
