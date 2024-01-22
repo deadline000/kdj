@@ -16,7 +16,7 @@ public class checkcontroller {
 
         return "admin_home";
     }
-    //  관리자 페이지 : 회원관리
+    //  관리자 페이지 : 회원관리.
     @RequestMapping("/admin_mem")
     public String admin_mem() {
 
